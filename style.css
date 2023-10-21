@@ -3,9 +3,10 @@ body {
     background: linear-gradient(to top, #aaffaa, #ffff77) no-repeat fixed;
 }
 
-.somarina {
+.corousel-image-recipe {
     width: 100%;
-    height: 500px;
+    height: 400px;
+    margin:  0 auto;
     object-fit: cover;
 }
 
