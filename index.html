@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hlavná stránka</title>
 
     <!-- Bootstrap -->
@@ -14,7 +13,9 @@
             crossorigin="anonymous"></script>
     <!-- Bootstrap -->
 
+    <!-- Bootstrap ikony -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap ikony -->
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,8 +30,9 @@
             </a>
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="https://www.google.sk" class="nav-link px-2 link-body-emphasis">Recepty</a></li>
-                <li><a href="https://www.google.sk" class="nav-link px-2 link-body-emphasis">Dnešný výber</a></li>
+                <li><a href="page_recipes.html" class="nav-link px-2 link-body-emphasis">Recepty</a></li>
+                <li><a href="page_todayschoice.html" class="nav-link px-2 link-body-emphasis">Dnešný výber</a></li>
+                <li><a href="page_savedrecipes.html" class="nav-link px-2 link-body-emphasis">Uložené recepty</a></li>
             </ul>
 
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -56,31 +58,46 @@
 </header>
 
 <main>
-
     <div class="container ">
         <div class="row">
             <div class="col"></div>
             <div class="col-lg-8 border border-2 bg-light p-3">
-                <div id="mainPageCorousel" class="carousel slide  mb-3">
+                <div id="mainPageCarousel" class="carousel slide mb-3">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/previews/recipe_01_preview.jpg" class="corousel-image-recipe" alt="...">
+                            <img src="img/previews/recipe_01_preview.jpg" class="carousel-recipe-preview" alt="...">
+                            <div class="carousel-caption carousel-recipe-caption p-3 gap-3 bg-light bg-opacity-50 border">
+
+                                <img src="img/icons/user_icon_01.png" alt="..." class="rounded-circle user-icon">
+                                <div class="d-flex gap-2 me-1 justify-content-between">
+                                    <div>
+                                        <h6 class="mb-0">MajsterKuchar</h6>
+                                        <p class="mb-1 opacity-75">Bryndzové halušky so slaninkou</p>
+                                        <div class="rating-bar">
+                                        <span class="rating-bg">
+                                            <span class="rating-star" style="width: 95%"></span>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class=" carousel-item">
-                            <img src="img/previews/recipe_02_preview.jpg" class="corousel-image-recipe" alt="...">
+                        <div class="carousel-item">
+                            <img src="img/previews/recipe_02_preview.jpg" class="carousel-recipe-preview" alt="...">
                         </div>
-                        <div class=" carousel-item">
-                            <img src="img/previews/recipe_03_preview.jpg" class="corousel-image-recipe" alt="...">
+                        <div class="carousel-item">
+                            <img src="img/previews/recipe_03_preview.jpg" class="carousel-recipe-preview" alt="...">
                         </div>
-                        <div class=" carousel-item">
-                            <img src="img/previews/recipe_04_preview.jpg" class="corousel-image-recipe" alt="...">
+                        <div class="carousel-item">
+                            <img src="img/previews/recipe_04_preview.jpg" class="carousel-recipe-preview" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mainPageCorousel"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainPageCarousel"
                             data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mainPageCorousel"
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainPageCarousel"
                             data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
@@ -182,7 +199,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <small class="opacity-50 text-nowrap">pred týždňom</small>
+                                <small class="opacity-50 text-nowrap">pred 2 týždňami</small>
                             </div>
                         </a>
 
