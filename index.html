@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Recepty</title>
 
     <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,19 +18,83 @@
 </head>
 
 <body>
-<div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 bg-dark text-primary" aria-current="true">
-            <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-            <div class="d-flex gap-2 w-100 justify-content-between">
-                <div>
-                    <h6 class="mb-0">List group item heading</h6>
-                    <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+<main>
+    <header class="p-3 mb-5 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="https://www.google.sk" class="nav-link px-2 link-secondary">Recepty</a></li>
+                    <li><a href="https://www.google.sk" class="nav-link px-2 link-body-emphasis">Dnešný výber</a></li>
+                    <li><a href="https://www.google.sk" class="nav-link px-2 link-body-emphasis">Customers</a></li>
+                    <li><a href="https://www.google.sk" class="nav-link px-2 link-body-emphasis">Products</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
                 </div>
-                <small class="opacity-50 text-nowrap">now</small>
             </div>
-        </a>
+        </div>
+    </header>
+
+    <div class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/preview/recipe01preview.jpg" class="d-block w-100 img-fluid" alt="img">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100 img-fluid" alt="img">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100 img-fluid" alt="img">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-</div>
+
+    <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                     class="rounded-circle flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0">List group item heading</h6>
+                        <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+                    </div>
+                    <small class="opacity-50 text-nowrap">now</small>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
 </body>
 </html>
