@@ -1,12 +1,11 @@
 body {
     background-size: cover;
-    background: linear-gradient(to top, #aaffaa, #ffff88) no-repeat fixed;
+    background: linear-gradient(to top, #aaffaa, #ffff77) no-repeat fixed;
 }
 
-.carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.somarina {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
-
 
