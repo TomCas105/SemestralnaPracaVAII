@@ -7,7 +7,6 @@ body {
 .corousel-image-recipe {
     width: 100%;
     height: 400px;
-    display: block;
     object-fit: cover;
 }
 
@@ -21,14 +20,23 @@ body {
     height: 32px;
 }
 
-.user-rating-bar {
+.rating-bar {
     height: 20px;
     width: 100px;
+    position: relative;
 }
 
-.user-rating-bar-stars {
+.rating-star {
     height: 20px;
     display: block;
     background: url("img/icons/user_rating.png") repeat-x;
+    background-size: 20px 20px;
+}
+
+.rating-bg {
+    width: 100%;
+    height: 20px;
+    display: block;
+    background: url("img/icons/user_rating_bg.png") repeat-x;
     background-size: 20px 20px;
 }

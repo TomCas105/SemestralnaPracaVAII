@@ -23,7 +23,8 @@
 <header class="p-3 mb-3 border-bottom border-2 bg-light">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="index.html" class="d-flex align-items-center mb-2 me-2 mb-lg-0 link-body-emphasis text-decoration-none">
+            <a href="index.html"
+               class="d-flex align-items-center mb-2 me-2 mb-lg-0 link-body-emphasis text-decoration-none">
                 <img src="img/icons/web_icon.png" alt="..." class="rounded-circle web-icon">
             </a>
 
@@ -39,7 +40,7 @@
             <div class="dropdown text-end">
                 <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="img/icons/user_icon_01.png" alt="..."  class="rounded-circle user-icon">
+                    <img src="img/icons/user_icon_01.png" alt="..." class="rounded-circle user-icon">
                 </a>
                 <ul class="dropdown-menu text-small">
                     <li><a class="dropdown-item" href="#">Pridať recept</a></li>
@@ -60,7 +61,7 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-lg-8 border border-2 bg-light p-3">
-                <div  id="mainPageCorousel" class="carousel slide  mb-3">
+                <div id="mainPageCorousel" class="carousel slide  mb-3">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="img/previews/recipe_01_preview.jpg" class="corousel-image-recipe" alt="...">
@@ -71,11 +72,16 @@
                         <div class=" carousel-item">
                             <img src="img/previews/recipe_03_preview.jpg" class="corousel-image-recipe" alt="...">
                         </div>
+                        <div class=" carousel-item">
+                            <img src="img/previews/recipe_04_preview.jpg" class="corousel-image-recipe" alt="...">
+                        </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mainPageCorousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainPageCorousel"
+                            data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mainPageCorousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainPageCorousel"
+                            data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
@@ -83,30 +89,100 @@
                 <div class="d-flex flex-column flex-md-row p-3 gap-3 py-md-3 align-items-center justify-content-center">
                     <div class="list-group w-75">
 
-                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                           aria-current="true">
                             <img src="img/icons/user_icon_04.png" alt="..." class="rounded-circle user-icon">
                             <div class="d-flex gap-2 w-100 justify-content-between">
                                 <div>
                                     <h6 class="mb-0">Jedlik_27</h6>
                                     <p class="mb-1 opacity-75">Kurací steak v curry omáčke</p>
-                                    <div class="user-rating-bar">
-                                        <span class="user-rating-bar-stars"  style="width: 90%"></span>
+                                    <div class="rating-bar">
+                                        <span class="rating-bg">
+                                            <span class="rating-star" style="width: 90%"></span>
+                                        </span>
                                     </div>
                                 </div>
                                 <small class="opacity-50 text-nowrap">dnes</small>
                             </div>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                           aria-current="true">
                             <img src="img/icons/user_icon_03.png" alt="..." class="rounded-circle user-icon">
                             <div class="d-flex gap-2 w-100 justify-content-between">
                                 <div>
                                     <h6 class="mb-0">Janko Hráško</h6>
                                     <p class="mb-1 opacity-75">Hrachová kaša s údeným mäsom</p>
-                                    <div class="user-rating-bar">
-                                    <span class="user-rating-bar-stars"  style="width: 70%"></span>
+                                    <div class="rating-bar">
+                                        <span class="rating-bg">
+                                            <span class="rating-star" style="width: 50%"></span>
+                                        </span>
                                     </div>
                                 </div>
-                                <small class="opacity-50 text-nowrap">dnes</small>
+                                <small class="opacity-50 text-nowrap">včera</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                           aria-current="true">
+                            <img src="img/icons/user_icon_01.png" alt="..." class="rounded-circle user-icon">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">MajsterKuchar</h6>
+                                    <p class="mb-1 opacity-75">Tiramisu s capuccinom</p>
+                                    <div class="rating-bar">
+                                        <span class="rating-bg">
+                                            <span class="rating-star" style="width: 80%"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <small class="opacity-50 text-nowrap">pred 3 dňami</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                           aria-current="true">
+                            <img src="img/icons/user_icon_03.png" alt="..." class="rounded-circle user-icon">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">Požívateľ</h6>
+                                    <p class="mb-1 opacity-75">Brašovská pochúťka</p>
+                                    <div class="rating-bar">
+                                        <span class="rating-bg">
+                                            <span class="rating-star" style="width: 60%"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <small class="opacity-50 text-nowrap">pred týždňom</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                           aria-current="true">
+                            <img src="img/icons/user_icon_02.png" alt="..." class="rounded-circle user-icon">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">Vidlička</h6>
+                                    <p class="mb-1 opacity-75">Gaštanový koláč s kakaovým korpusom</p>
+                                    <div class="rating-bar">
+                                        <span class="rating-bg">
+                                            <span class="rating-star" style="width: 75%"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <small class="opacity-50 text-nowrap">pred týždňom</small>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                           aria-current="true">
+                            <img src="img/icons/user_icon_01.png" alt="..." class="rounded-circle user-icon">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">Knedlíček</h6>
+                                    <p class="mb-1 opacity-75">Maďarská mäsová polievka (Palócleves)</p>
+                                    <div class="rating-bar">
+                                        <span class="rating-bg">
+                                            <span class="rating-star" style="width: 15%"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <small class="opacity-50 text-nowrap">pred týždňom</small>
                             </div>
                         </a>
 
